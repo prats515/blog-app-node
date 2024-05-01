@@ -1,0 +1,14 @@
+# docker-compose.yml
+
+version: '3.1'
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: postgres
+    ports:
+      - '5432:5432'
+    container_name: node-server-project
